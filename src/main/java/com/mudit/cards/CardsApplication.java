@@ -12,9 +12,9 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-/*@ComponentScans({ @ComponentScan("com.eazybytes.cards.controller") })
-@EnableJpaRepositories("com.eazybytes.cards.repository")
-@EntityScan("com.eazybytes.cards.model")*/
+/*@ComponentScans({ @ComponentScan("com.mudit.cards.controller") })
+@EnableJpaRepositories("com.mudit.cards.repository")
+@EntityScan("com.mudit.cards.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @EnableConfigurationProperties(CardsContactInfoDto.class)
 @OpenAPIDefinition(
@@ -23,18 +23,18 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				description = "EazyBank Cards microservice REST API Documentation",
 				version = "v1",
 				contact = @Contact(
-						name = "Madan Reddy",
-						email = "tutor@eazybytes.com",
-						url = "https://www.eazybytes.com"
+						name = "Mudit Khanna",
+						email = "tutor@mudit.com",
+						url = "https://www.mudit.com"
 				),
 				license = @License(
 						name = "Apache 2.0",
-						url = "https://www.eazybytes.com"
+						url = "https://www.mudit.com"
 				)
 		),
 		externalDocs = @ExternalDocumentation(
 				description = "EazyBank Cards microservice REST API Documentation",
-				url = "https://www.eazybytes.com/swagger-ui.html"
+				url = "https://www.mudit.com/swagger-ui.html"
 		)
 )
 public class CardsApplication {
